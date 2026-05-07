@@ -117,7 +117,7 @@ transition: .3s ease all;
 /* text Wraper  */
 
 .text-wraper{
-    width:40%;
+    width:45%;
     margin-left: 200px;
     height: auto;
     display: flex;
@@ -148,8 +148,9 @@ margin: 40px 0;
 .text-wraper .text-frame .points-wraper{
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: start;
-    gap: 50px;
+    gap:30px;
 }
 
 .text-wraper .text-frame .points-wraper .points h2{
@@ -162,14 +163,12 @@ font-size: 20px;
 font-weight: 600;
 }
 
-
- 
- /*center wraper */
+ /*Cards wraper */
 .text-wraper .page-wrapper {
         width: 100%;
         max-width: 960px;
     }
- 
+
 .text-wraper .page-title {
         color: #ffffff;
         font-size: 2rem;
