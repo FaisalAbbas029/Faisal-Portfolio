@@ -3,6 +3,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
 #container{
@@ -18,20 +19,23 @@ body{
 
 /* navbar  */
 
-header{
-    width: 100%;
-}
+    header{
+        width: 280px;
+    }
 header ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 10px 20px;
+    margin: 30px 0;
     gap: 20px;
+    background-color: #1A1A1A;
+    border-radius: 15px;
 }
 
 header ul li a{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     transition:.3s ease all;
 }
 
@@ -93,6 +97,7 @@ text-align: center;
     align-items: center;
     justify-self: center;
     gap: 20px;
+
 }
 
 .div-wraper .img-frame .social ul{
@@ -103,7 +108,8 @@ text-align: center;
 
 .div-wraper .img-frame .social ul li a{
 color:#5e0e19 ;
-font-size: 25px;
+font-size: 23px;
+height: 23px;
 transition: .3s ease all;
 }
 
@@ -376,7 +382,8 @@ background-color: #393939da;
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 30px;
+    flex-wrap:wrap;
+    gap: 0px;
     padding: 30px;
 }
 
@@ -511,22 +518,29 @@ color: #998F8F;
     width: 95%;
 }
 .text-wraper .text-frame h1 {
-font-size: 52px;
+    font-size: 52px;
 }
 
 .text-wraper .text-frame p{
     font-size: 16px;
 }
 
+}
 .text-wraper .text-frame .points-wraper{
     flex-wrap: wrap;
 }
+
 .text-wraper .text-frame .points-wraper .points h2{
     font-size: 50px;
 }
 .text-wraper .text-frame .points-wraper .points p{
 font-size: 16px;
 }
+
+.text-wraper .tools .tools-wraper .tool{
+    width: 100%;
+}
+
 
 /* projects */
 .text-wraper .projects h1{
@@ -564,9 +578,6 @@ font-size: 16px;
     font-size: 16px;
 }
 
-}
-
-
 /* Cards  */
 @media (max-width: 500px) {
     .page-title  { font-size: 1.5rem; }
@@ -576,19 +587,107 @@ font-size: 16px;
 
 
 /* MOBILE  */
-@media (max-width:426px) {
-.text-wraper .text-frame h1 {
-font-size: 42px;
+@media (max-width:426px){
+#container{
+    padding: 0 8px;
+    margin: 0;
+}
+    header{
+        width: 100%;
+    }
+    header ul {
+    margin: 15px 0;
+    background-color: transparent;
 }
 
-
-.text-wraper .text-frame .points-wraper .points h2{
-    font-size: 42px;
+.text-wraper .text-frame h1 {
+    line-height: 30px;
+    font-size: 35px;
+    margin:20px 0;
+}
+    .text-wraper .text-frame p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+.text-wraper .text-frame .points-wraper {
+    gap: 12px;
+}
+.text-wraper .card-title {
+    font-size: 19px;
 }
 
 /* projects */
+.text-wraper .projects .project{
+    padding: 20px 0px;
+    width: 95%;
+}
+.text-wraper .projects .project-wraper .project img{
+    border-radius: 5px;
+}
 .text-wraper .projects h1{
-    font-size:42px;
+    font-size:35px;
     margin: 20px 0;
+    line-height: 30px;
+}
+.text-wraper .projects .project-wraper .project{ 
+    gap: 3px;
+    padding: 15px 0;
+}
+.text-wraper .projects .project-wraper .project .text p {
+    font-size: 14px;
+}
+
+.div-wraper .img-frame p{
+font-size: 14px;
+}
+
+.text-wraper .experience-wraper .experience {
+    padding: 20px 0px;
+}
+.text-wraper .experience-wraper .experience .text p{
+    font-size: 14px;
+}
+
+.text-wraper .text-frame p{
+    font-size: 14px;
+}
+.text-wraper .tools .tools-wraper .tool{
+    padding: 20px 0; 
+    width: 95%;
+    gap: 10px;
+}
+
+.text-wraper .tools .tools-wraper .tool .text h4 {
+    font-size: 15px;
+}
+
+.text-wraper .text-frame .points-wraper .points{
+    width: 30%;
+}
+.text-wraper .text-frame .points-wraper .points h2{
+    font-size: 30px;
+}
+.text-wraper .text-frame .points-wraper .points p{
+font-size: 14px;
+}
+.text-wraper .experience-wraper .experience{
+    width: 95%;
+}
+
+.text-wraper .footer{
+padding:5px;
+}
+
+.text-wraper .footer form{
+    padding: 8px;
+}
+
+/* copyright */
+.copyright{
+    padding: 25px;
+    margin-top: 25px;
+}
+.copyright p{
+    font-size: 12px;
 }
 }
