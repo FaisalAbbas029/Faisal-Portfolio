@@ -29,7 +29,7 @@ header ul {
     padding: 10px 20px;
     margin: 30px 0;
     gap: 20px;
-    background-color: #1A1A1A;
+    background-color: #393939da;
     border-radius: 15px;
 }
 
@@ -74,7 +74,7 @@ header ul li a:active{
 }
 
 .div-wraper .hero-wraper img{
-width: 250px;
+    width: 250px;
     border-radius: 15px;
     object-position: center;
 }
@@ -145,6 +145,7 @@ margin: 40px 0;
 
 .text-wraper .text-frame p{
     color: #998F8F;
+    text-align: left;
     font-size: 20px;
     font-weight: 600;
     margin-bottom:30px ;
@@ -173,7 +174,7 @@ font-weight: 600;
 .text-wraper .page-wrapper {
         width: 100%;
         max-width: 960px;
-    }
+}
 
 .text-wraper .page-title {
         color: #ffffff;
@@ -182,14 +183,14 @@ font-weight: 600;
         letter-spacing: -0.02em;
         text-transform: uppercase;
         margin-bottom: 2rem;
-      }
+}
 
 .text-wraper .cards-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 16px;
-      }
- 
+}
+
 .text-wraper .card {
         border-radius: 18px;
         padding: 26px 22px 20px;
@@ -201,16 +202,16 @@ font-weight: 600;
         justify-content: flex-end;
         cursor: pointer;
         transition: transform 0.8s ease, box-shadow 0.2s ease;
-      }
+}
 .text-wraper .card:hover {
         transform: translateY(-5px);
         box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
-      }
- 
+}
+
 .text-wraper .card-red    { background-color: #5e0e19; }
 .text-wraper .card-green  { background-color: #AADB1E; }
 .text-wraper .card-dark   { background-color: #1A1A1A; }
- 
+
 .text-wraper .card-tag {
         position: absolute;
         top: 18px;
@@ -223,12 +224,12 @@ font-weight: 600;
         border-radius: 20px;
         border: 1px solid rgba(255, 255, 255, 0.45);
         color: rgba(255, 255, 255, 0.9);
-      }
+}
 
 .text-wraper .card-green .card-tag {
         color: rgba(0, 0, 0, 0.55);
         border-color: rgba(0, 0, 0, 0.2);
-      }
+}
 
 .text-wraper .zigzag {
         position: absolute;
@@ -236,9 +237,8 @@ font-weight: 600;
         right: -12px;
         opacity: 0.25;
         pointer-events: none;
-      }
- 
-  
+}
+
 .text-wraper .card-title {
         font-size: 21px;
         font-weight: 800;
@@ -249,11 +249,11 @@ font-weight: 600;
         margin-bottom: 14px;
         position: relative;
         z-index: 1;
-      }
+}
 
 .text-wraper .card-green .card-title {
         color: #0e1a00;
-      }
+}
 
 .text-wraper .card-arrow {
         width: 36px;
@@ -268,23 +268,26 @@ font-weight: 600;
         z-index: 1;
         color: white;
         transition: background-color 0.2s ease;
-      }
- 
+}
+
 .text-wraper .card-arrow:hover {
-        background-color: rgba(255, 255, 255, 0.15);
-      }
- 
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
 .text-wraper .card-arrow svg {
-        width: 16px;
-        height: 16px;
-      }
+    width: 16px;
+    height: 16px;
+}
 
 .text-wraper .card-green .card-arrow {
-        border-color: rgba(0, 0, 0, 0.25);
-        color: #0e1a00;
+    border-color: rgba(0, 0, 0, 0.25);
+    color: #0e1a00;
 }
 
 /* projects */
+.text-wraper .projects .project-wraper{
+    border-bottom: 3px solid #1A1A1A;
+}
 .text-wraper .projects h1{
     font-size:100px;
     text-align: start;
@@ -292,20 +295,21 @@ font-weight: 600;
     margin: 30px 0;
 }
 
-.text-wraper .projects  .project{
+.text-wraper .projects .project-wraper .project{
     display: flex;
     align-items: center;
     justify-content: space-between;
-gap: 50px;
-margin: 5px 0;
-padding: 40px 20px;
-border-radius: 15px;
-transition: .8s ease all;
+    gap: 50px;  
+    margin: 5px 0;
+    padding: 30px 10px;
+    border-radius: 15px;
+    transition: .8s ease all;
+    background-color: transparent;
+}
+.text-wraper .projects .project-wraper .project:hover{
+    background-color: #393939da;
 }
 
-.text-wraper .projects .project:hover{
-background-color: #393939da;
-}
 .text-wraper .projects  h1 span{
     color: #393939da;
     letter-spacing: 5px;
@@ -323,6 +327,7 @@ background-color: #393939da;
 .text-wraper .projects .project-wraper .project .text p{
     color: #998F8F;
     font-weight: 600;
+    font-size: 20px;
 }
 
 
@@ -335,6 +340,14 @@ background-color: #393939da;
 .text-wraper .experience-wraper{
     margin: 30px 0;
 }
+.text-wraper .experience-wraper h1{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 80px;
+}
+.text-wraper .experience-wraper h1 span{
+    color: #393939da;
+}
 .text-wraper .experience-wraper .experience{
     display: flex;
     align-items: center;
@@ -344,6 +357,7 @@ background-color: #393939da;
     padding: 40px 20px;
     border-radius: 15px;
     transition: .8s ease all;
+    border-bottom: 3px solid #1A1A1A;
 }
 
 .text-wraper .experience-wraper  .experience i {
@@ -361,42 +375,52 @@ background-color: #393939da;
 .text-wraper .experience-wraper  .experience .text p{
     color:#998F8F;
     font-weight: 600;
+    font-size: 20px;
     margin-top: 10px;
 }
 
-/* essential tools  */
+/* Daily routine  */
 
-.text-wraper .tools{
+.text-wraper .routine{
     margin: 30px 0px;
-
 }
-.text-wraper .tools .tools-wraper{
+.text-wraper .routine .routine-wraper{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 3px solid #1A1A1A;
 }
 
-.text-wraper .tools .tools-wraper .tool{
-    width: 40%;
+.text-wraper .routine .routine-wraper .daily-task{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-wrap:wrap;
-    gap: 0px;
-    padding: 30px;
+    gap: 15px;
+    padding: 20px;
+
 }
 
-.text-wraper .tools .tools-wraper .tool img{
-    width: 50px;
-    margin-right: 0px;
+.text-wraper .routine .routine-wraper .daily-task span{
+    background-color: #393939da;
+    border-radius: 100%;
+    padding: 8px;
 }
-.text-wraper .tools .tools-wraper .tool .text h3{
+.text-wraper .routine .routine-wraper .daily-task i{
+    font-size: 18px;
+    margin: 0px;
+    text-align: center;
+    color: #5e0e19;
+}
+
+.text-wraper .routine .routine-wraper .daily-task .text h3{
     font-size: 24px;
     margin-bottom: 5px;
     color: #ffffff;
 }
-.text-wraper .tools .tools-wraper .tool .text h4{
+.text-wraper .routine .routine-wraper .daily-task .text h4{
     font-size: 16px;
     margin-bottom: 5px;
     color: #998F8F;
@@ -404,11 +428,52 @@ background-color: #393939da;
 }
 
 
-/* working hours */
-.text-wraper ul{
-    border: 2px solid #5e0e19;
-    text-align: center;
-    margin: 30px 0;
+/* reminder */
+.text-wraper .reminder{
+        border-top:3px solid #1A1A1A;
+        border-bottom:3px solid #1A1A1A;
+        padding: 10px;
+        align-items: start;
+}
+.text-wraper .reminder h1{
+    line-height: 80px;
+    font-weight: 700;
+    font-size:100px ;
+}
+.text-wraper .reminder h1 span{
+    color:#393939da;
+}
+.text-wraper .reminder p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.text-wraper .reminder h4{
+    font-size: 22px;
+    font-weight: 550;
+    margin: 10px 0;
+    color: #393939da;
+}
+.text-wraper .reminder .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 7px 0;
+}
+
+.text-wraper .reminder .social ul li a{
+    color: #5e0e19;
+    font-size: 20px;
+    transition:.3s ease all;
+}
+
+.text-wraper .reminder .social ul li a:hover{
+    color: #1A1A1A;
+}
+
+.text-wraper .reminder .socail ul li a:active{
+    color: #AADB1E;
 }
 
 /* footer  */
@@ -420,6 +485,14 @@ border-radius: 15px;
 padding:5px;
 margin: 30px 0px;
 }
+.text-wraper .footer h1{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 80px;
+} 
+.text-wraper .footer h1 span{
+    color: #393939da;
+} 
 
 .text-wraper .footer form{
     padding: 30px;
@@ -514,6 +587,12 @@ color: #998F8F;
 /* tablet   */
 
 @media (max-width:769px) {
+.div-wraper .hero-wraper{
+    padding: 20px 5px;
+}
+.div-wraper .hero-wraper p{
+    display: none;
+}
 .text-wraper{
     width: 95%;
 }
@@ -523,8 +602,6 @@ color: #998F8F;
 
 .text-wraper .text-frame p{
     font-size: 16px;
-}
-
 }
 .text-wraper .text-frame .points-wraper{
     flex-wrap: wrap;
@@ -537,10 +614,14 @@ color: #998F8F;
 font-size: 16px;
 }
 
-.text-wraper .tools .tools-wraper .tool{
-    width: 100%;
+.text-wraper .routine .routine-wraper .daily-task{
+    padding: 20px 0px; 
 }
 
+.text-wraper .experience-wraper h1{
+    font-size: 52px;
+    line-height: 40px;
+}
 
 /* projects */
 .text-wraper .projects h1{
@@ -564,19 +645,32 @@ font-size: 16px;
     font-size: 18px;
 }
 
-/* essential tools  */
-.text-wraper .tools .tools-wraper .tool .text h3{
+/* daily routine  */
+.text-wraper .routine .routien-wraper .daily-task .text h3{
     font-size: 18px;
 }
-
-.text-wraper .footer form #btn:active{
-    background-color:#393939da;
-    color: #AADB1E;
+.text-wraper .reminder h1{
+    line-height: 40px;
+    font-size:52px ;
 }
+.text-wraper .reminder p{
+    font-size: 16px;
+}
+.text-wraper .reminder h4{
+    font-size: 18px;
+}
+.text-wraper .footer h1{
+    font-size: 52px;
+    line-height: 50px;
+} 
+
 
 .copyright p{
     font-size: 16px;
 }
+
+}
+
 
 /* Cards  */
 @media (max-width: 500px) {
@@ -605,10 +699,10 @@ font-size: 16px;
     font-size: 35px;
     margin:20px 0;
 }
-    .text-wraper .text-frame p {
-        font-size: 14px;
-        margin-bottom: 15px;
-    }
+.text-wraper .text-frame p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
 .text-wraper .text-frame .points-wraper {
     gap: 12px;
 }
@@ -616,11 +710,17 @@ font-size: 16px;
     font-size: 19px;
 }
 
+.text-wraper .experience-wraper h1{
+    font-size: 35px;
+    line-height: 30px;
+}
+
 /* projects */
 .text-wraper .projects .project{
     padding: 20px 0px;
     width: 95%;
 }
+
 .text-wraper .projects .project-wraper .project img{
     border-radius: 5px;
 }
@@ -651,13 +751,12 @@ font-size: 14px;
 .text-wraper .text-frame p{
     font-size: 14px;
 }
-.text-wraper .tools .tools-wraper .tool{
-    padding: 20px 0; 
+.text-wraper .routine .routien-wraper .daily-task{
     width: 95%;
     gap: 10px;
 }
 
-.text-wraper .tools .tools-wraper .tool .text h4 {
+.text-wraper .routine .routien-wraper .daily-task .text h4 {
     font-size: 15px;
 }
 
@@ -674,13 +773,37 @@ font-size: 14px;
     width: 95%;
 }
 
+.text-wraper .reminder h1{
+    line-height: 30px;
+    font-size:35px ;
+}
+.text-wraper .reminder p{
+    font-size: 14px;
+}
+.text-wraper .reminder h4{
+    font-size: 16px;
+}
+
+.copyright p{
+    font-size: 16px;
+}
+
+
 .text-wraper .footer{
 padding:5px;
 }
+.text-wraper .footer h1{
+    font-size: 35px;
+    line-height: 40px;
+} 
 
+.text-wraper .reminder p{
+    font-size: 14px;
+}
 .text-wraper .footer form{
     padding: 8px;
 }
+
 
 /* copyright */
 .copyright{
@@ -689,5 +812,72 @@ padding:5px;
 }
 .copyright p{
     font-size: 12px;
+}
+}
+
+.blog{
+    width: 45%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.blog h1{
+    font-size: 100px;
+    line-height: 90px;
+    font-weight: 650;
+    margin: 15px 0;
+}
+
+.blog h1 span{
+    color:#393939da;
+}
+.blog p{
+    font-size: 20px;
+    font-size: 600;
+    margin-bottom: 15px;
+}
+.blog h3{
+    color: #393939da;
+    font-size: 26px;
+    font-weight:600;
+    margin-bottom: 15px;
+}
+
+@media (max-width:768px) {
+    .blog{
+    width: 100%;
+}
+
+.blog h1{
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.blog p{
+    font-size: 16px;
+}
+.blog h3{
+    font-size: 20px;
+}
+}
+@media (max-width:425px) {
+#container{
+    padding: 0 15px;
+}
+.blog h1{
+    font-size:35px;
+    margin: 10px 0;
+}
+
+.blog p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.blog h3{
+    color: #393939da;
+    font-size: 16px;
 }
 }
