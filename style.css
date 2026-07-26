@@ -16,6 +16,42 @@ body{
     background-color: black;
     color: #ffff;
 }
+@keyframes appear{
+    0%{
+        opacity: 0;
+        scale: .5;
+    }
+    50% {
+        opacity: 1;
+        scale: 1;
+    }
+
+    100%{
+        opacity: 1;
+        scale: .5;
+    }
+
+    
+}
+.project-wraper .project{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+}
+
+.experience-wraper .experience{
+    animation: appear linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+}
+
+.routine .routine-wraper .daily-task{
+    animation: appear linear ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+}
+
+
 
 /* navbar  */
 
