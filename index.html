@@ -273,27 +273,59 @@ Feb 28, 2026</p></div>
   </div>
 
 <!-- footer  -->
-  <div class="footer">
+<div class="footer">
     <h1>LET'S WORK <span>TOGETHER</span></h1>
-    <form action="php" name="chat" onsubmit="return validateForms()">
-      <label for="name">Name</label>
-      <input type="name" name="fname" id="name" placeholder="Faisal Abbas" >
-      <label for="mail">Email</label>
-      <input type="email" name="email" id="mail" placeholder="faisalabbas029@gmail.com" >
-      <label for="buget">Budget</label>
-      <select name="" id="budget"> 
-      <option value="">Decide later</option>
-        <option value="">Below 50$</option>
-        <option value="">Below 100$</option>
-        <option value="">Below 500$</option>
-        <option value="">Below 1000$</option>
-      </select>
-      <label for="comment">Message</label>
-<textarea name="textarea" id="comment" placeholder="Hello i want to work with you" rows="5"></textarea>
-    <input type="submit" value="Submit" id="btn">
-    </form>
-  </div>
 
+    <form action="https://formsubmit.co/faisalabbasgb29@gmail.com"
+          method="POST"
+          name="chat"
+          onsubmit="return validateForms()">
+
+        <!-- Optional FormSubmit Settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Portfolio Contact">
+        <input type="hidden" name="_template" value="table">
+
+        <label for="name">Name</label>
+        <input
+            type="text"
+            name="fname"
+            id="name"
+            placeholder="Faisal Abbas"
+            required
+        >
+
+        <label for="mail">Email</label>
+        <input
+            type="email"
+            name="email"
+            id="mail"
+            placeholder="faisalabbas029@gmail.com"
+            required
+        >
+
+        <label for="budget">Budget</label>
+        <select name="budget" id="budget">
+            <option value="Decide later">Decide later</option>
+            <option value="Below $50">Below $50</option>
+            <option value="Below $100">Below $100</option>
+            <option value="Below $500">Below $500</option>
+            <option value="Below $1000">Below $1000</option>
+        </select>
+
+        <label for="comment">Message</label>
+        <textarea
+            name="textarea"
+            id="comment"
+            rows="5"
+            placeholder="Hello, I want to work with you."
+            required
+        ></textarea>
+
+        <input type="submit" value="Submit" id="btn">
+
+    </form>
+</div>
 
   </div>
 </section>
